@@ -24,7 +24,7 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginStart="138dp"
         android:layout_marginEnd="138dp"
         android:layout_marginBottom="25dp"
@@ -73,7 +73,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="305dp"
         android:layout_marginBottom="378dp"
-        android:text="Password"
+        android:text="@string/password"
         android:textColor="#000000"
         android:textSize="40px"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -135,7 +135,7 @@
         android:id="@+id/editTextTextPassword"
         android:layout_width="235dp"
         android:layout_height="45dp"
-        android:layout_marginStart="47dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="72dp"
         android:layout_marginBottom="35dp"
@@ -144,6 +144,7 @@
         android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/imageButton2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -152,16 +153,18 @@
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="235dp"
         android:layout_height="45dp"
-        android:layout_marginStart="43dp"
+        android:layout_marginStart="40dp"
         android:layout_marginEnd="72dp"
         android:layout_marginBottom="6dp"
         android:ems="10"
-        android:inputType="textEmailAddress"
+        android:inputType="text"
         android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageButton
@@ -180,6 +183,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2"
         app:srcCompat="@drawable/register"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="89dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="275dp"
+        android:layout_marginBottom="2dp"
+        android:onClick="phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:srcCompat="@drawable/phone_icon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

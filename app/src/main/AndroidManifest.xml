@@ -10,13 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
+            android:name=".dashboard"
+            android:exported="true" />
+        <activity
             android:name=".register"
             android:exported="true" />
         <activity
-            android:name=".activity_second"
+            android:name=".login"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".splashscreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

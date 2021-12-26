@@ -5,19 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ADE0EF"
-    tools:context=".MainActivity">
+    tools:context=".splashscreen">
 
     <ImageView
         android:id="@+id/namaApp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="139dp"
-        android:layout_marginEnd="138dp"
-        android:layout_marginBottom="320dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="332dp"
+        android:contentDescription="@android:string/untitled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
         app:srcCompat="@drawable/kuis_yukkuisyuk" />
 
     <ImageView
@@ -28,7 +28,7 @@
         android:layout_marginTop="278dp"
         android:layout_marginEnd="151dp"
         android:background="#ADE0EF"
-
+        android:contentDescription="@android:string/untitled"
         app:layout_constraintBottom_toTopOf="@+id/namaApp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

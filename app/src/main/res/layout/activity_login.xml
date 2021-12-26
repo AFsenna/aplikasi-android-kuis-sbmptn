@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ADE0EF"
-    tools:context=".activity_second" >
+    tools:context=".login" >
 
     <ImageView
         android:id="@+id/imageView"
@@ -38,14 +38,13 @@
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="149dp"
+        android:layout_marginStart="140dp"
         android:layout_marginEnd="150dp"
-        android:layout_marginBottom="510dp"
+        android:layout_marginBottom="532dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:srcCompat="@drawable/welcome" />
 
     <TextView
@@ -84,8 +83,8 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="23dp"
-        android:layout_height="26dp"
+        android:layout_width="19dp"
+        android:layout_height="29dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="305dp"
@@ -115,24 +114,24 @@
         app:srcCompat="@drawable/rectangle_4" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/button"
         android:layout_width="147dp"
         android:layout_height="48dp"
         android:layout_marginStart="130dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="133dp"
         android:background="#ADE0EF"
         android:minHeight="48dp"
         android:onClick="Loginyuk"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton5"
+        app:layout_constraintBottom_toTopOf="@id/imageButton5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/password"
         app:srcCompat="@drawable/login"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/password"
         android:layout_width="235dp"
         android:layout_height="45dp"
         android:layout_marginStart="40dp"
@@ -142,7 +141,7 @@
         android:ems="10"
         android:inputType="textPassword"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
@@ -150,7 +149,7 @@
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/username"
         android:layout_width="235dp"
         android:layout_height="45dp"
         android:layout_marginStart="40dp"
@@ -172,32 +171,32 @@
         android:layout_width="149dp"
         android:layout_height="48dp"
         android:layout_marginStart="130dp"
-        android:layout_marginTop="5dp"
         android:layout_marginEnd="133dp"
         android:layout_marginBottom="200dp"
         android:background="#ADE0EF"
+        android:contentDescription="TODO"
         android:minHeight="48dp"
         android:onClick="Daftaryuk"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/button"
         app:srcCompat="@drawable/register"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:contentDescription="TODO" />
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="89dp"
         android:layout_height="63dp"
-        android:layout_marginStart="330dp"
+        android:layout_marginStart="317dp"
         android:layout_marginTop="275dp"
         android:layout_marginBottom="2dp"
         android:onClick="phone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
-        app:srcCompat="@drawable/phone_icon" />
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:srcCompat="@drawable/phone_icon"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

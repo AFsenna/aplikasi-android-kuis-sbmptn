@@ -5,9 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class splashscreen extends AppCompatActivity {
 
     //3detik ganti activity
     private int waktuLoad = 3000;
@@ -15,11 +14,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_splashscreen);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent login = new Intent(MainActivity.this,activity_second.class);
+                Intent login = new Intent(splashscreen.this, login.class);
                 finish();
                 startActivity(login);
             }

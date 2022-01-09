@@ -4,38 +4,112 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ADE0EF"
-    tools:context=".dashboard">
+    android:background="@drawable/android___3"
+    tools:context=".dashboard" >
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="199dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="205dp"
-        android:layout_marginEnd="116dp"
-        android:layout_marginBottom="64dp"
-        android:text="TextView"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView6"
+    <ImageButton
+        android:id="@+id/imageButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="102dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="227dp"
-        android:layout_marginBottom="384dp"
-        android:text="TextView"
-        android:textColor="#000000"
-        android:textSize="20sp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="btnInfo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.994"
+        app:srcCompat="@drawable/rectangle_15" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="btnHome"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.994"
+        app:srcCompat="@drawable/home" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="btnUser"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.994"
+        app:srcCompat="@drawable/user" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="303dp"
+        android:layout_height="161dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginEnd="125dp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="kuis_saintek"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kuis_saintek" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="305dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="123dp"
+        android:layout_marginBottom="18dp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="kuis_soshum"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton6"
+        app:srcCompat="@drawable/kuis_soshum" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="305dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginEnd="123dp"
+        android:layout_marginBottom="73dp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="hasil_kuis"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton7"
+        app:srcCompat="@drawable/hasil_kuis" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginEnd="234dp"
+        android:layout_marginBottom="119dp"
+        android:background="#00556066"
+        android:fontFamily="sans-serif"
+        android:text="Alexandria Felicia Seanne"
+        android:textColor="#556066"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class dashboard extends AppCompatActivity {
@@ -14,13 +15,36 @@ public class dashboard extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard);
 
         Intent intent = getIntent();
-        String nama = intent.getStringExtra("username");
-        String password = intent.getStringExtra("password");
 
-        TextView textView5 = findViewById(R.id.textView5);
-        TextView textView6 = findViewById(R.id.textView6);
+    }
 
-        textView5.setText("Username : "+nama);
-        textView6.setText("\npassword : "+password);
+    public void kuis_saintek(View view) {
+        Intent saintek = new Intent(dashboard.this, paket_kuis_activity.class);
+        startActivity(saintek);
+    }
+
+    public void kuis_soshum(View view) {
+        Intent soshum = new Intent(dashboard.this, paket_kuis_activity.class);
+        startActivity(soshum);
+    }
+
+    public void hasil_kuis(View view) {
+        Intent hasil = new Intent(dashboard.this, login.class);
+        startActivity(hasil);
+    }
+
+    public void btnInfo(View view) {
+        Intent login = new Intent(dashboard.this, login.class);
+        startActivity(login);
+    }
+
+    public void btnHome(View view) {
+        Intent login = new Intent(dashboard.this, login.class);
+        startActivity(login);
+    }
+
+    public void btnUser(View view) {
+        Intent login = new Intent(dashboard.this, login.class);
+        startActivity(login);
     }
 }

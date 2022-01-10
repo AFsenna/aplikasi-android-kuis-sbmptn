@@ -19,4 +19,19 @@ public class paket_kuis_activity extends AppCompatActivity {
         startActivity(btnBack);
 
     }
+
+    public void btnPaket1(View view) {
+        Intent btnPaket = new Intent(paket_kuis_activity.this,kuis_activity.class);
+        startActivity(btnPaket);
+    }
+
+    public void btnPaket2(View view) {
+        Intent btnPaket = new Intent(paket_kuis_activity.this,kuis_activity.class);
+        startActivity(btnPaket);
+    }
+
+    public void btnPaket3(View view) {
+        Intent btnPaket = new Intent(paket_kuis_activity.this,kuis_activity.class);
+        startActivity(btnPaket);
+    }
 }

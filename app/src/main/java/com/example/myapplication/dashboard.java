@@ -29,12 +29,12 @@ public class dashboard extends AppCompatActivity {
     }
 
     public void hasil_kuis(View view) {
-        Intent hasil = new Intent(dashboard.this, login.class);
+        Intent hasil = new Intent(dashboard.this, hasil_kuis.class);
         startActivity(hasil);
     }
 
     public void btnInfo(View view) {
-        Intent login = new Intent(dashboard.this, login.class);
+        Intent login = new Intent(dashboard.this, tentang_aplikasi.class);
         startActivity(login);
     }
 
@@ -44,7 +44,7 @@ public class dashboard extends AppCompatActivity {
     }
 
     public void btnUser(View view) {
-        Intent login = new Intent(dashboard.this, login.class);
+        Intent login = new Intent(dashboard.this, profile.class);
         startActivity(login);
     }
 }

@@ -16,7 +16,7 @@
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.83"
@@ -29,6 +29,7 @@
         android:text="Kembali"
         android:textColor="#000000"
         android:textStyle="bold"
+        android:onClick="btnBack"
         app:layout_constraintBottom_toBottomOf="@+id/imageButton26"
         app:layout_constraintEnd_toEndOf="@+id/imageButton26"
         app:layout_constraintStart_toStartOf="@+id/imageButton26"
@@ -46,7 +47,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.472"
+        app:layout_constraintVertical_bias="0.475"
         app:srcCompat="@drawable/kotak_putih_jawaban" />
 
     <ImageButton
@@ -143,7 +144,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView21"
